@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Spinner, Modal, ModalHeader, ModalBody } from 'reactstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import './MediaModal.css';
 
@@ -106,7 +107,7 @@ MediaModal.defaultProps = {
 
 class MediaModalTarget extends Component {
     state = {
-        isModalActive: false,
+        isModalActive: this.props.isModalOpen,
     };
 
     openModal = () => this.setState({ isModalActive: true });
@@ -143,6 +144,7 @@ MediaModalTarget.propTypes = {
     type: PropTypes.oneOf(['image', 'video', 'youtube']).isRequired,
     src: PropTypes.string.isRequired,
     title: PropTypes.string,
+    isModalOpen: PropTypes.bool,
 };
 
 MediaModalTarget.defaultProps = {
@@ -150,6 +152,7 @@ MediaModalTarget.defaultProps = {
     type: 'image',
     src: '',
     title: '',
+    isModalOpen: false,
 };
 
 export default MediaModalTarget;

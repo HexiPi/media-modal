@@ -1,7 +1,6 @@
 import React from 'react';
 import MediaModalTarget from './MediaModal.jsx';
 import { Button } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => (
@@ -17,6 +16,7 @@ const App = () => (
       <MediaModalTarget 
         type="video" 
         src="https://192.168.1.226:3002/rs_DriveMyCar.mp4"
+        isModalOpen={true}
         target={<Button id="video-test" color="warning" className="bob2">Video Test</Button>}
       />
       <br />
