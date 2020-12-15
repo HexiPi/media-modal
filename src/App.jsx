@@ -8,14 +8,14 @@ const App = () => (
     <div className="App-header">
       <MediaModalTarget 
         type="image" 
-        src="https://192.168.1.226/static/media/AlienBrowser_v8.0.7918854d.jpg" 
+        src="https://jaaproductions.com/static/media/AlienBrowser_v8.0.7918854d.jpg" 
         title="AlienBrowser" 
         target={<Button id="image-test" color="primary" className="bob1">Image Test</Button>} 
       />
       <br />
       <MediaModalTarget 
         type="video" 
-        src="https://192.168.1.226:3002/rs_DriveMyCar.mp4"
+        src="https://dl.dropbox.com/s/iptusk9mkpaf3r2/rs_DriveMyCar.mp4"
         isModalOpen={true}
         target={<Button id="video-test" color="warning" className="bob2">Video Test</Button>}
       />
@@ -35,7 +35,7 @@ const App = () => (
       <br />
       <MediaModalTarget 
         type="web" 
-        src="https://192.168.1.226"
+        src="https://jaaproductions.com"
         title="J.A.A. Productions"
         target={<Button id="web-test" className="bob5">Web Test 2</Button>} 
       />
